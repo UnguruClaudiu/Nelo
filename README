@@ -1,4 +1,0 @@
-mkdir ~/Nelo
-cd ~/Nelo
-git init
-touch README
