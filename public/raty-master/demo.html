@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+<script src="vendor/jquery.js"></script><script src="lib/jquery.raty.js"></script>
+
+
+</head>
+<body>
+
+<div id="starHalf"></div>
+  <script>
+  $.fn.raty.defaults.path = 'lib/images';
+
+  $(function() {
+	$('#starHalf').raty({
+	 click: function(score, evt) {
+		alert('ID: ' + $(this).attr('id') + "\nscore: " + score + "\nevent: " + evt.type);
+	  },
+	  half     : true,
+	  path     : null,
+	  starHalf : 'lib/images/star-half-mono.png',
+	  starOff  : 'lib/images/star-off.png',
+	  starOn   : 'lib/images/star-on.png'
+	});
+
+  });
+</script>
+
+
+</body>
+</html>

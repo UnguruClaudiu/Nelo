@@ -1,0 +1,451 @@
+@font-face{
+	font-family: Narrow-Web-Regular;
+	src: url(../fonts/PT_Sans-Narrow-Web-Regular.ttf);
+}
+
+@font-face{
+	font-family: Narrow-Web-Bold;
+	src: url(../fonts/PT_Sans-Narrow-Web-Bold.ttf);
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Narrow-Web-Regular, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	height: 100%;
+}
+
+a {
+	color: #3498DB;
+	text-decoration: none;
+	outline: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	background: #fff;
+	box-shadow: 0px 1px 3px #ccc;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	overflow: visible;
+	z-index: 9999;
+}
+
+nav {
+	width: 62.5em;
+	position: relative;
+	margin: 0 auto;
+}
+
+nav p {
+	background: #3498DB;
+	color: #fff;
+	display: inline;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+nav ul {
+	float: right;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	padding: 10px;
+	margin-left: 5px;
+	box-shadow: 0 #3498DB;
+	-webkit-transition: box-shadow 0.5s;
+	-moz-transition: box-shadow 0.5s;
+	-ms-transition: box-shadow 0.5s;
+	-o-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+}
+
+nav ul li a:hover {
+	box-shadow: 0 4px 0 #3498DB;
+}
+
+article {
+	padding-top: 90px;
+}
+
+input, textarea {
+	display: block;
+}
+
+.clear  {
+	clear: both;
+}
+
+section {
+    max-width: 1000px;  
+	margin: auto;
+}
+
+section#search {
+	padding-top: 20px;
+}
+
+section#search h3{
+	font-size: 2em;
+	color: #3498DB;
+}
+
+section#search #facilities {
+	display: none;
+}
+
+section#search #facilities #hotel_facility {
+	width: 49%;
+	float: left;
+}
+
+section#search #facilities #room_facility {
+	width: 49%;
+	float: left;
+}
+
+section#search input[type=checkbox] {
+	visibility: hidden;
+}
+
+section#search .checkbox {
+	width: 15px;
+	height: 15px;
+	margin :0 10px 10px;
+	position: relative;
+	border: 2px solid #000;
+	display: inline-block;
+}
+
+section#search .checkbox  input{
+	display: inline;
+}
+
+section#search .checkbox label:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+section#search .checkbox label:after {
+	width: 7px;
+	height: 4px;
+	top: 3px;
+	left: 3px;
+	border: 3px solid #000;
+	border-top: none;
+	border-right: none;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+section#search input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+section#search .text {
+	cursor: pointer;
+}
+
+#pswd_info {
+	right:55px;
+	width:250px;
+	padding:15px;
+	background:#fefefe;
+	font-size:.875em;
+	border-radius:5px;
+	box-shadow:0 1px 3px #ccc;
+	border:1px solid #ddd;
+	display:none;
+}
+
+#pswd_info h4 {
+	margin:0 0 10px 0;
+	padding:0;
+	font-weight:normal;
+}
+
+#pswd_info::before {
+	content: "\25B2";
+	position: absolute;
+	top: -12px;
+	left: 45%;
+	font-size: 14px;
+	line-height: 14px;
+	color: #ddd;
+	text-shadow: none;
+	display: block;
+}
+
+.invalid {
+	background: url(images/invalid.png) no-repeat 0 50%;
+	padding-left :22px;
+	line-height: 24px;
+	color: #ec3f41;
+}
+.valid {
+	background: url(images/valid.png) no-repeat 0 50%;
+	padding-left: 22px;
+	line-height: 24px;
+	color: #3a7d34;
+}
+
+.msg-ok, .msg-error {
+	background: #3498DB;
+	width: 20em;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.msg-error {
+	background: red;
+}
+
+.divider {
+	height: 2px;
+	background-color: #3498DB;
+	margin: 10px 0 10px 0;
+}
+
+section button {
+	margin: 10px 5px 10px 5px;
+	padding: 10px;
+	display:inline-block;
+	border: 1px solid #3498DB;
+	background: #fff;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+
+	-webkit-transition: color 0.5s ease-in;
+	-moz-transition: color 0.5s ease-in;
+	-ms-transition: color 0.5s ease-in;
+	-o-transition: color 0.5s ease-in;
+	transition: color 0.5s ease-in;
+	
+	-webkit-transition: background 0.5s ease-out;
+	-moz-transition: background 0.5s ease-out;
+	-ms-transition: background 0.5s ease-out;
+	-o-transition: background 0.5s ease-out;
+	transition: background 0.5s ease-out;	
+}
+
+section button:hover {
+	background: #3498DB;
+	color: #fff;
+}
+
+section input[type="submit"] {
+	margin: 10px 5px 10px 5px;
+	padding: 10px;
+	border: 1px solid #3498DB;
+	background: #fff;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+
+	-webkit-transition: color 0.5s ease-in;
+	-moz-transition: color 0.5s ease-in;
+	-ms-transition: color 0.5s ease-in;
+	-o-transition: color 0.5s ease-in;
+	transition: color 0.5s ease-in;
+	
+	-webkit-transition: background 0.5s ease-out;
+	-moz-transition: background 0.5s ease-out;
+	-ms-transition: background 0.5s ease-out;
+	-o-transition: background 0.5s ease-out;
+	transition: background 0.5s ease-out;	
+}
+
+section input[type="submit"]:hover {
+	background: #3498DB;
+	color: #fff;
+}
+
+section a {
+	margin: 10px 5px 10px 5px;
+	padding: 10px;
+	display:inline-block;
+	border: 1px solid #3498DB;
+	background: #fff;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+
+	-webkit-transition: color 0.5s ease-in;
+	-moz-transition: color 0.5s ease-in;
+	-ms-transition: color 0.5s ease-in;
+	-o-transition: color 0.5s ease-in;
+	transition: color 0.5s ease-in;
+	
+	-webkit-transition: background 0.5s ease-out;
+	-moz-transition: background 0.5s ease-out;
+	-ms-transition: background 0.5s ease-out;
+	-o-transition: background 0.5s ease-out;
+	transition: background 0.5s ease-out;	
+}
+
+section a:hover {
+	background: #3498DB;
+	color: #fff;
+}
+
+section a.gray {
+	background: #2D2D2D;
+	border: 1px solid #fff;
+	
+	-webkit-transition: border 0.5s ease-out;
+	-moz-transition: border 0.5s ease-out;
+	-ms-transition: border 0.5s ease-out;
+	-o-transition: border 0.5s ease-out;
+	transition: border 0.5s ease-out;
+}
+
+section a.gray:hover  {
+	border: 1px solid #3498DB;
+}
+
+section a.gray {
+	background: #2D2D2D;
+	border: 1px solid #fff;
+	
+	-webkit-transition: border 0.5s ease-out;
+	-moz-transition: border 0.5s ease-out;
+	-ms-transition: border 0.5s ease-out;
+	-o-transition: border 0.5s ease-out;
+	transition: border 0.5s ease-out;
+}
+
+section .hotel h3 {
+	border-top: 2px solid #2D2D2D;
+	border-bottom: 2px solid #2D2D2D;
+	font-size: 3em;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	color: #3498DB;
+	
+	-webkit-transition: color 0.5s ease-out;
+	-moz-transition: color 0.5s ease-out;
+	-ms-transition: color 0.5s ease-out;
+	-o-transition: color 0.5s ease-out;
+	transition: color 0.5s ease-out;	
+	
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;	
+}
+
+section .hotel h3:hover {
+	border-top: 2px solid #3498DB;
+	border-bottom: 2px solid #3498DB;
+	color: #F4DA18;
+	width: 55%;
+}
+
+section .hotel .hotel_image {
+	margin: auto;
+	position: relative;
+	width: 600px;
+	height: 250px;
+	background-size: 600px;
+	background-position: center center;
+}
+
+section .room_image {
+	width: 600px;
+	height: 250px;
+	background-size: 600px;
+	background-position: center center;
+	margin: 20px;
+}
+
+section .stars {
+	text-align: center;
+	margin: 10px;
+}
+
+section .last_book {
+	color: #3498DB;
+}
+
+section#admin  a.admin_button {
+	width: 60%;
+	text-align: center;
+	color: #3498DB;
+	font-size: 1.25em;
+	text-transform: uppercase;
+}
+
+section#admin  a.admin_button:hover {
+	color: #fff;
+}
+
+section .room_type {
+	margin: 20px;
+	width: 600px;
+	height: 250px;
+	background-size: 600px;
+	background-position: center center;
+}
+
+section#booking2 form label{
+	display: block;
+}
+
+section#booking2 form div{
+	padding: 10px;
+}
+
+table {
+	border: 0;
+}
+
+table th {
+	background: #3498DB;
+	color: #fff;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+table tr {
+	background: #e5e6e7;
+	color: #2D2D2D;
+}
+
+table tr:nth-child(odd) {
+	background: #2D2D2D;
+	color: #fff;
+}
+
+table tr td {
+	text-align: center;
+	padding-left: 4px;
+	padding-right: 4px;
+}
