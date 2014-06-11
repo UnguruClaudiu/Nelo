@@ -1,0 +1,69 @@
+@import url("http://fonts.googleapis.com/css?family=Inder&subset=latin,latin-ext");
+@import url("http://fonts.googleapis.com/css?family=Voces&subset=latin,latin-ext");
+
+body {
+  font-family: 'Voces', Garamond, Verdana, serif;
+  color: #333;
+  background-color: #EEE;
+  margin: 0px auto;
+  width: 40em;
+  font-size: 1.1em;
+}
+h1 { 
+  font-family: 'Inder', sans-serif;
+  font-size: 2em;
+  color: #036;
+  text-align: center;  
+}
+
+h2 {
+  font-family: 'Inder', Arial, Helvetica, sans-serif;  
+  font-size: 1.5em;
+  border: 1px black dashed;
+  background-color: white;
+  padding: 0.2em;
+  margin: 0;
+}
+
+h3, h5 {
+  padding: 3px;
+  width: 100%; 
+  font-size: 1.2em;
+  border-bottom: 1px solid gray;
+} 
+
+p { 
+  line-height: 1.3;  
+  margin-top: 0.6em;  
+  margin-bottom: 0.6em;  
+  font-family: 'Voces', Garamond, Verdana, serif;
+  font-size: 1.1em;  
+}
+a:active {
+  color: blue;
+}
+a:visited {
+  color: #036;
+  text-decoration: none;
+}
+a:hover {
+  color: #FFF;
+  background: #F30;
+  text-decoration: none;
+}
+a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #036;
+}
+
+img {
+  margin: auto;
+  border: 1px solid grey;
+  text-align: center;
+}
+
+.caption {
+  font-size: 0.8em;
+  text-align: center;
+}

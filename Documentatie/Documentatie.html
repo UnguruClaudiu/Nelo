@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nelo</title>
+	<link rel="stylesheet" type="text/css" href="doc.css" />
+</head>
+<body>
+    <header>
+    	<h1>Nelo</h1>
+    </header>
+    <article>
+        <section class="authors">
+            <h2>Authors</h2>
+            <p>
+                <ul>
+                    <li>Rusu Alexandru B3</li>
+					<li>Unguru Robert Daniel B3</li>
+                    <li>Claudiu Unguru 4A</li>
+                </ul>
+            </p>
+        </section>
+        
+        <section class="authors">
+            <h2>Purpose</h2>
+            <p>The aim of this project is to help clients find hotels on a specific location and date.</p>
+            <h2>Usage</h2>
+        </section>
+        
+        <section>
+            <h3>Interactive interface</h3>
+            <p>In interactive mode, the user is able to enter filtering hotel and make a rezervation.
+            </p>
+
+            <h2>Implementation</h2>
+            <h3>Framework</h3>
+            <p>The foundation of the app is built on <strong>Laravel</strong>, a web application framework in PHP with flexible
+                RESTful routing and MVC structure.</p>
+            <p>A basic route looks like this:
+                <pre>
+				Route::get('logout', function(){
+
+				Session::forget('username');
+				Session::forget('password');
+				return Redirect::to('login');
+				});
+
+                </pre>
+                which allows easy creation of templates with pre-populated variables already injected into it.
+            </p>
+
+            <h3>Structure of users</h3>
+			<p> <strong> Admin site </strong> - have a special page where can modify/add or delete users, rezervations, hotels, facilities. </p>
+			<p> <strong> Hotel adminitrator </strong>- have a special page where can see details about his hotel. </p>
+			<p> <strong> Normal user </strong>- can only filter hotels and make rezervations. </p>
+        </section>
+    </article>
+    
+    <script async class="speakerdeck-embed" data-id="94056ca0b14101303a4b3abe74553765" data-ratio="1.33507170795306" src="//speakerdeck.com/assets/embed.js"></script>
+    
+</body>
+</html>
